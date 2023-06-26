@@ -2,25 +2,32 @@
 // default parameter []
 // positional named parameter {}
 
-void main(){
-  // defaultPara(); 
+void main() {
+  defaultParameter(num: 3);
+  // defaultPara(3);
   // parameter('Myo Min Latt', 26, 'MDY', "male"); // need to fill, fixed
   // positionalParameter(age: 26, name: 'MML'); // Named parameter can fill arguments anywhere
-
-} 
-
-void defaultPara([int num = 1]){ // default parameter []
-  print(2* num);
 }
 
-void parameter(String name, int age, String address, String genter){
+void defaultPara([int num = 1]) {
+  // default parameter []
+  print(2 * num);
+}
+
+void defaultParameter({int num = 2}) {
+  // default parameter []
+  print(2 * num);
+}
+
+void parameter(String name, int age, String address, String genter) {
   print('Name is $name');
   print('Age is $age');
   print('Address is $address');
   print('Genter is $genter');
 }
 
-void positionalParameter({required String name, int? age, String? address, String? genter}){
+void positionalParameter(
+    {required String name, int? age, String? address, String? genter}) {
   print('Name is $name');
   print('Age is $age');
   print('Address is $address');

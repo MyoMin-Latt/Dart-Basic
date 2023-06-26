@@ -14,5 +14,7 @@ void info({required String? name, String? age}) {
 
   print('object "obj" ...');
   print("object 'obj' ...");
-  print("object obj's  obj's...");
+  print("object obj's\n  obj's...");
+
+  print('100\$');
 }

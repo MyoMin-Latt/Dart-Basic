@@ -1,6 +1,6 @@
 // Abstraction(abstract class)
 // Abstract classes can't be instantiated
-// all methods in abstract must be override
+// all methods(only name) in abstract must be override
 
 void main() {
   // Person person = Person(); // Abstract classes can't be instantiated.
@@ -14,9 +14,12 @@ void main() {
 }
 
 abstract class Person {
+  // abstract methods
   void name();
   void age();
   String address();
+
+  // regular methods
   void phone() {
     print('Phone is 09123456789');
   }

@@ -1,4 +1,4 @@
-void main(){
+void main() {
   Person person = Person(); // instantiate class
   person.name = 'Ma Ma'; // reference variable
   print(person.name);
@@ -9,7 +9,7 @@ void main(){
   person.walk();
 }
 
-class Person{
+class Person {
   //instance variable
   //property
   String name = 'Mg Mg';
@@ -17,10 +17,11 @@ class Person{
   String address = 'MDY';
 
   //method
-  void speak(){
+  void speak() {
     print('Can speck burmese');
   }
-  void walk(){
+
+  void walk() {
     print('Can walk quickly');
   }
 }

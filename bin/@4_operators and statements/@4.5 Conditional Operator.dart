@@ -1,3 +1,4 @@
+// Ternary Operator
 // --? --: --;
 
 void main() {
@@ -36,7 +37,6 @@ void main() {
 //           ? print('str is Hey')
 //           : print('Non of the above');
 // }
-
 
 // void main() {
 //   String str = "Hi";
