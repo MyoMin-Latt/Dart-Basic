@@ -15,8 +15,8 @@ void main() {
       // .takeWhile((element) => element < 5)
       // .skipWhile((element) => element < 3)
       .listen(
-    (num) {
-      print(num);
+    (no) {
+      print(no);
     },
     cancelOnError: true,
     // onError: (e) => print(e)

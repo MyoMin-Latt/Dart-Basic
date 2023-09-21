@@ -1,13 +1,15 @@
 // argument in callback function, under scole _
 
 void main() {
-  // calculate(num: 2, cal: (single, _, __, fourth){
-  //   print('$single');
-  // });
+  // calculate(
+  //     num: 2,
+  //     cal: (single, _, __, fourth) {
+  //       print('$single');
+  //     });
   calculate(
       num: 2,
-      cal: (single, double, triple, fourth) {
-        print('$single $double $triple $fourth');
+      cal: (single, dob, triple, fourth) {
+        print('$single $dob $triple $fourth');
       });
 }
 

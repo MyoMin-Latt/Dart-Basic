@@ -8,16 +8,16 @@ StreamSink streamSink = streamController.sink;
 void main() async {
   addNum();
   Stream stream = streamController.stream.asBroadcastStream();
-  stream.listen((num) {
-    print('Listener 1 $num');
+  stream.listen((no) {
+    print('Listener 1 $no');
   });
   // await Future.delayed(Duration(seconds: 1));
-  stream.listen((num) {
-    print('Listener 2 $num');
+  stream.listen((no) {
+    print('Listener 2 $no');
   });
   await Future.delayed(Duration(seconds: 1));
-  stream.listen((num) {
-    print('Listener 3 $num');
+  stream.listen((no) {
+    print('Listener 3 $no');
   });
 }
 

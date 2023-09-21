@@ -16,7 +16,7 @@ class Person {
 
 class Engineer extends Person {
   @override
-  String name = "Ma Ma"; // Don't override fields.
+  // String name = "Ma Ma"; // Don't override fields.
   @override
   void speak() {
     print('Engineer, $name should speak Engish and burmese languages');

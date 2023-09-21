@@ -1,7 +1,8 @@
 // for in loop & for each loop (function)
 
-void main(){
-  List<int> list = [1,2,3,4,5];
+void main() {
+  List<int> list = [1, 2, 3, 4, 5];
+  // ignore: avoid_function_literals_in_foreach_calls
   list.forEach((element) => print(element));
 }
 

@@ -7,20 +7,26 @@
 
 import 'package:rxdart/rxdart.dart';
 
-// void main(){
+// void main() {
 //   ReplaySubject replaySubject = ReplaySubject();
 //   replaySubject.add('event1');
-//   replaySubject.listen((value) {print('Listener1.$value');}); // call all value
+//   replaySubject.listen((value) {
+//     print('Listener1.$value');
+//   }); // call all value
 //   replaySubject.add('event2');
 // }
 
-// void main(){
+// void main() {
 //   BehaviorSubject behaviorSubject = BehaviorSubject();
 //   behaviorSubject.add('event1');
 //   behaviorSubject.add('event2');
-//   behaviorSubject.listen((value) {print('Listener1.$value');}); // call first value before
+//   behaviorSubject.listen((value) {
+//     print('Listener1.$value');
+//   }); // call first value before
 //   behaviorSubject.add('event3');
-//   behaviorSubject.listen((value) {print('Listener2.$value');}); // call first value before
+//   behaviorSubject.listen((value) {
+//     print('Listener2.$value');
+//   }); // call first value before
 //   behaviorSubject.add('event4');
 // }
 

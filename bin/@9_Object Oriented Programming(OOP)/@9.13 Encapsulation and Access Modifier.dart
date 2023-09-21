@@ -7,5 +7,6 @@ import '@9.1302.dart';
 
 void main() {
   Number number = Number();
+  number.num = 2; // '@9.1302.dart'
   number.triple(3);
 }

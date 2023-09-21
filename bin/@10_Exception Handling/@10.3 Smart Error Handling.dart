@@ -2,38 +2,34 @@
 // သိဖို့လိုတဲ့ အတွက်အရေးကြီးပါတယ်။
 // custom exception, throw, implement
 
-void main(){
+void main() {
   try {
     numberBetween1to10(0);
-  }
-  on GreaterThan10Error catch(e){
+  } on GreaterThan10Error catch (e) {
     print(e.errorMessage);
-  }
-  on LessThanZeroError catch(e){
+  } on LessThanZeroError catch (e) {
     print(e.errorMessage);
-  }
-  catch (e) {
+  } catch (e) {
     print(e);
   }
 }
-void numberBetween1to10(int num){
-  if(num>0 && num<11){
+
+void numberBetween1to10(int num) {
+  if (num > 0 && num < 11) {
     print(num);
-  }
-  else if(num>10){
+  } else if (num > 10) {
     throw GreaterThan10Error('Number is greater than 10');
-  }
-  else if(num<1){
+  } else if (num < 1) {
     throw LessThanZeroError('Number is less than 1');
-  }
-  else{
-  }
+  } else {}
 }
-class GreaterThan10Error implements Exception{
+
+class GreaterThan10Error implements Exception {
   final String errorMessage;
-  GreaterThan10Error(this.errorMessage);  
+  GreaterThan10Error(this.errorMessage);
 }
-class LessThanZeroError implements Exception{
+
+class LessThanZeroError implements Exception {
   final String errorMessage;
   LessThanZeroError(this.errorMessage);
 }
@@ -75,7 +71,6 @@ class LessThanZeroError implements Exception{
 //   LessThanZeroError(this.errorType);
 // }
 
-
 // void main(){
 //   try {
 //     numberBetween1to10(12);
@@ -101,7 +96,7 @@ class LessThanZeroError implements Exception{
 //     print(num);
 //   }
 //   else if(num > 10){
-//     throw GreaterThan10Error('Number is greater than 10'); 
+//     throw GreaterThan10Error('Number is greater than 10');
 //   }
 //   else{
 //     throw LessThan1Error('Number is less than zero');
@@ -115,7 +110,6 @@ class LessThanZeroError implements Exception{
 //   final String errorMessage;
 //   LessThan1Error(this.errorMessage);
 // }
-
 
 // void main(){
 //   numberBetween1to10(20);

@@ -8,8 +8,8 @@
 
 void main() {
   Engineer engineer = Engineer('MDY');
-  engineer.speak();
-  engineer.run();
+  // engineer.speak();
+  // engineer.run();
   // engineer.degree = 'BE';
   // print(engineer.degree);
   // engineer.name = 'Tun Tun';
@@ -34,7 +34,9 @@ class Person {
 
 class Engineer extends Person {
   // child class
-  Engineer(String adress) : super(adress); // super constructor
+  Engineer(String adress) : super(adress) {
+    print('Engineer lives in : $adress');
+  } // super constructor
   String? degree;
   @override
   final height = 6;

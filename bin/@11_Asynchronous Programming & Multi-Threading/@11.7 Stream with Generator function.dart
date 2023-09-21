@@ -3,7 +3,7 @@
 
 void main() {
   print('Normal work1');
-  getNum(7).listen((num) => print(num))
+  getNum(7).listen((no) => print(no))
     ..onDone(() {
       print('Done');
     })
@@ -23,14 +23,18 @@ Stream<int> getNum(int num) async* {
   }
 }
 
-// void main(){
+// void main() {
 //   print('Normal work1');
-//   getNum().forEach((element) {print(element);});
+//   getNum().forEach((element) {
+//     print(element);
+//   });
 //   print('Normal work2');
 //   print('Normal work3');
 // }
-// Iterable<int> getNum() sync*{ //Sync generator
-//   for(int i=0; i<4; i++){
+
+// Iterable<int> getNum() sync* {
+//   //Sync generator
+//   for (int i = 0; i < 4; i++) {
 //     yield i;
 //   }
 // }

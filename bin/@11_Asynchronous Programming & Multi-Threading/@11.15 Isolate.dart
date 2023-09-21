@@ -4,7 +4,6 @@
 import 'dart:isolate';
 
 void main() {
-  Isolate.spawn(work1, 2);
   work2(3);
   // print('Main function => ${Isolate.current.debugName} Isolate');
 }
@@ -17,6 +16,7 @@ void work1(int end) {
 }
 
 void work2(int end) {
+  Isolate.spawn(work1, 2);
   // print('Work2 => ${Isolate.current.debugName} Isolate');
   for (int i = 1; i <= end; i++) {
     print('Work2 $i');

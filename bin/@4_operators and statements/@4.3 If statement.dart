@@ -1,16 +1,16 @@
 //statement
 
-void main(){
+void main() {
   String s = 'Hello';
-  if(s.length==5){
+  if (s.length == 5) {
     print('length is 5');
     print('It is ture');
   } // for multi_results
-  else if(s.length == 6)
+  else if (s.length == 6) {
     print('Length is 6');
-  
-  else
-  print('lenght is not 5');
+  } else {
+    print('lenght is not 5');
+  }
 }
 
 

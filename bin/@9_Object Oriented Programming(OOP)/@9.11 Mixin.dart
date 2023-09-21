@@ -1,14 +1,15 @@
 // inheritance [single] [variable, method, supper consturctor]
 // mixin [multiple] [variable, method]
 // Mixins can't declare constructors
+// Abstract cannot declare constructors
 
 // extends
 //   > normal class => can call part
-//   > abstract class
+//   > abstract class => must override only function name();
 
 // Abstraction(interface)
 // implement
-//   > must override in the parent class
+//   > must override all(var, method) in the parent class
 
 // minxin
 // with
@@ -28,6 +29,7 @@ void main() {
 }
 
 mixin Physics {
+  String name = 'Physics';
   // Physics(){};// Mixins can't declare constructors.
   void physics() => print('Studying physics');
   void physics01() => print('Studying physics01');

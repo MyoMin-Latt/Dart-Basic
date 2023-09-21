@@ -9,8 +9,8 @@ StreamSink streamSink = streamController.sink;
 void main() {
   streamSink.add(10);
   Stream stream = streamController.stream;
-  stream.listen((num) {
-    print(num);
+  stream.listen((no) {
+    print(no);
   }).onError((error) => print(error));
   streamSink.add(20);
   addNum();

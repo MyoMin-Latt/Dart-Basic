@@ -1,6 +1,6 @@
 // implements(interface)
 // can extend many classes with override using implement
-// must override in the parent class
+// must override all (var, method) in the parent class
 
 void main() {
   Student student = Student();
@@ -13,8 +13,12 @@ void main() {
 }
 
 abstract class Myanmar {
+  String name = 'Myanmar';
   void myanmar();
   void myanmar01();
+  void myanmar03() {
+    print('myanmar03');
+  }
 }
 
 class English {
@@ -55,5 +59,13 @@ class Student implements Myanmar, English {
 
   void science() {
     print('Student studies science');
+  }
+
+  @override
+  String name = '';
+
+  @override
+  void myanmar03() {
+    // TODO: implement myanmar03
   }
 }

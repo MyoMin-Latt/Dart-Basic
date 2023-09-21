@@ -8,14 +8,14 @@
 //     i++;
 //     if(i%3==0){
 //       print(i);
-//     }    
+//     }
 //   }
 // }
 
-
-void main(){
-  for(int i=0; i<101; i+= 3){
-    if(i>1 && i<=100)
-    print(i);
+void main() {
+  for (int i = 0; i < 101; i += 3) {
+    if (i > 1 && i <= 100) {
+      print(i);
+    }
   }
 }

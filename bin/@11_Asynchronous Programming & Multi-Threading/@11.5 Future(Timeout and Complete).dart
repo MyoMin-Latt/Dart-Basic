@@ -15,8 +15,8 @@ void main() {
 }
 
 Future<String> getInt() {
-  return Future.delayed(Duration(seconds: 1),
+  return Future.delayed(Duration(seconds: 3),
       () => throw 'This is error'); // no need async for future return
-  // return Future.delayed(Duration(seconds: 3),
+  // return Future.delayed(Duration(seconds: 2),
   //     () => 'Future with String'); // no need async for future return
 }

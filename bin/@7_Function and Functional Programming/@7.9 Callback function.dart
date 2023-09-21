@@ -4,11 +4,12 @@
 
 void main() {
   List<int> nums = [2, 3, 4, 5];
-  // for (var item in nums) { // imperative style
-  // }
+  for (var item in nums) {
+    // imperative style
+  }
   // nums
   // .map((e) => e % 2 == 0? e: 0)
-  // .forEach((e) => print(e)); // declarative style
+  // .forEach((e) => print(e)); // declarative style, declare in parameter
   // doubleNum(
   //   num: () => 5,
   //   dd: (d) => print(d)
