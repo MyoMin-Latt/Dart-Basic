@@ -8,7 +8,7 @@
 void main(){
  square(null);
 }
-int? square(int? num){
+void square(int? num){
   print(num ?? 'Default Value');
   if(num != null){
   print(num * num); 
