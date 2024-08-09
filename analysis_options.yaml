@@ -24,6 +24,7 @@ analyzer:
     unused_local_variable: ignore
     unused_import: ignore
     file_names: ignore
+    unused_field: ignore
 #   exclude:
 #     - path/to/excluded/files/**
 

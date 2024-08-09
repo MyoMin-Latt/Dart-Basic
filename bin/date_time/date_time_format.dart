@@ -1,4 +1,4 @@
-import 'package:date_format/date_format.dart';
+// import 'package:date_format/date_format.dart';
 
 import '../@11_Asynchronous Programming & Multi-Threading/@11.16 Type Allias in Dart.dart';
 // day, weekday, month, substract, yesterday,
@@ -67,12 +67,12 @@ getDateTimeList(int num) {
 
 DateTime setDateTime(int num) => DateTime.now().add(Duration(days: num));
 
-String getFormattedDateString(DateTime date) {
-  final formatter = formatDate(DateTime.now(), ['EE', 'DDD', 'mmm']);
-  return formatter;
-}
+// String getFormattedDateString(DateTime date) {
+//   final formatter = formatDate(DateTime.now(), ['EE', 'DDD', 'mmm']);
+//   return formatter;
+// }
 
-String getTodayDateString() => getFormattedDateString(DateTime.now());
+// String getTodayDateString() => getFormattedDateString(DateTime.now());
 
 // DateTime mostRecentSunday(DateTime date) =>
 //     DateTime(date.year, date.month, date.day - date.weekday % 7);

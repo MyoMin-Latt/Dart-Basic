@@ -58,6 +58,7 @@ class ApiService {
     print('start database');
   }
 
+  // ignore: unused_element
   ApiService._() {
     print('Api Service Create in private');
   }

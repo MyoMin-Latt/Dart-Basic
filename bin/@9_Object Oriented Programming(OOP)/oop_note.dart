@@ -13,7 +13,7 @@
 
 // minxin
 // with
-//   > can override any method of mixin & any class
+//   > can override any method of any mixin class
 
 // Encapsulation
 // open for extension // close for modfication

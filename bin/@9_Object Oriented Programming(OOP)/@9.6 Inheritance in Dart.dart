@@ -39,6 +39,7 @@ class Engineer extends Person {
   } // super constructor
   String? degree;
   @override
+  // ignore: overridden_fields
   final height = 6;
   void job() => print("Enigneer makes a project");
   @override
@@ -54,6 +55,8 @@ class Engineer extends Person {
 class Admin extends Engineer {
   // extra testing
   Admin(String adress) : super(adress);
+  @override
+  // ignore: overridden_fields
   int height = 7;
   @override
   void printHeight() {

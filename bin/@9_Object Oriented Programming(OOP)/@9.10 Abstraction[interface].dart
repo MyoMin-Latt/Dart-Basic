@@ -32,6 +32,12 @@ class Maths {
   }
 }
 
+class Physics {
+  void physics() {
+    // print('print in class(interface)'); // cannot work at interface class(implement)
+  }
+}
+
 class Student implements Myanmar, English {
   @override
   void english() {

@@ -2,18 +2,17 @@
 //! (nullable type => no-nullable type) => name!
 //?? null aware operator
 
-
-
-
-void main(){
- square(null);
+void main() {
+  square(null);
 }
-int? square(int? num){
+
+int? square(int? num) {
   print(num ?? 'Default Value');
-  if(num != null){
-  print(num * num); 
+  if (num != null) {
+    print(num * num);
   }
   print(null);
+  return null;
 }
 
 

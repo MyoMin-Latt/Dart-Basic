@@ -5,7 +5,7 @@
 // behaviorSubject => start to call the first value before listen
 // replaySubject => start to call all value before and after
 
-import 'package:rxdart/rxdart.dart';
+// import 'package:rxdart/rxdart.dart';
 
 // void main() {
 //   ReplaySubject replaySubject = ReplaySubject();
@@ -44,25 +44,25 @@ import 'package:rxdart/rxdart.dart';
 //   publishSubject.add('event4');
 // }
 
-void main() {
-  PublishSubject publishSubject = PublishSubject();
-  publishSubject.add(1);
-  publishSubject.add(2);
-  List<int> intList = [];
-  publishSubject.listen(
-    (value) {
-      print('Listener1.$value');
-      intList.add(value);
-      print(intList);
-    },
-    onDone: () => print('intList'),
-    // onError: () => print('on Error'),
-    // cancelOnError: false,
-  );
-  // print(intList);
-  publishSubject.add(3);
-  publishSubject.listen((value) {
-    print('Listener2.$value');
-  });
-  publishSubject.add(4);
-}
+// void main() {
+//   PublishSubject publishSubject = PublishSubject();
+//   publishSubject.add(1);
+//   publishSubject.add(2);
+//   List<int> intList = [];
+//   publishSubject.listen(
+//     (value) {
+//       print('Listener1.$value');
+//       intList.add(value);
+//       print(intList);
+//     },
+//     onDone: () => print('intList'),
+//     // onError: () => print('on Error'),
+//     // cancelOnError: false,
+//   );
+//   // print(intList);
+//   publishSubject.add(3);
+//   publishSubject.listen((value) {
+//     print('Listener2.$value');
+//   });
+//   publishSubject.add(4);
+// }

@@ -8,9 +8,11 @@ environment:
 
 dependencies:
   path: ^1.8.0
-  rxdart: ^0.27.3
+  rxdart: ^0.27.7
   meta: ^1.8.0
   date_format: ^2.0.6
+  uuid: ^4.3.3
+  encrypt: ^5.0.3
 
 dev_dependencies:
   lints: ^1.0.0

@@ -9,6 +9,7 @@ void addNumber({required List<int> list}){
   
   add(){
     int sumTotal = 0;
+    // ignore: avoid_function_literals_in_foreach_calls
     list.forEach((element) {
       sumTotal += element;
     });

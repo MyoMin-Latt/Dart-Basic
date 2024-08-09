@@ -12,5 +12,6 @@ void main(){
   [].typeInfo();
 }
 extension on Object{
+  // ignore: unnecessary_this
   void typeInfo() => print('This is ${this.runtimeType} data type');
 }
